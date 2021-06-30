@@ -2287,6 +2287,8 @@ a {
   top: 0;
   animation: fadeLeft 0.5s forwards ease;
   animation-delay: 2s;
+  -webkit-animation: fadeLeft 0.5s forwards ease;
+  -webkit-animation-delay: 2s;
 }
 @keyframes fadeLeft {
   0% {
@@ -2317,6 +2319,8 @@ a {
   opacity: 0;
   animation: fadeLeft2 0.5s forwards ease;
   animation-delay: 2s;
+  -webkit-animation: fadeLeft2 0.5s forwards ease;
+  -webkit-animation-delay: 2s;
 }
 @keyframes fadeLeft2 {
   0% {
@@ -2342,6 +2346,8 @@ a {
   float: right;
 }
 #preloader .status .percentage:before {
+  animation: percentage-slow 1.2s forwards, percentage-fast .3s forwards;
+  animation-delay: 0s, 1.75s;
   -webkit-animation: percentage-slow 1.2s forwards, percentage-fast .3s forwards;
   -webkit-animation-delay: 0s, 1.75s;
   content: "10%";
