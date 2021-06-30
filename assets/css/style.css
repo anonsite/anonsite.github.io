@@ -17,6 +17,8 @@ body {
   font-family: courier, monospace;
   color: rgb(0, 170, 0);
   background: #000; 
+  max-width: 100%;
+  overflow: hidden;
 }
 
 a {
@@ -344,6 +346,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+table, tr, td, th {
+  border: 1px dashed #00ff00;
+}
+td, th {
+  padding: 0 12px;
+}
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: absolute;
