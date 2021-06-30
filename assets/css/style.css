@@ -18,7 +18,7 @@ body {
   color: rgb(0, 170, 0);
   background: #000; 
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
