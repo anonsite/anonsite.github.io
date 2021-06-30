@@ -2357,15 +2357,13 @@ a {
   float: right;
 }
 #preloader .status .percentage:before {
-  animation: percentage-slow 1.2s forwards ease, percentage-fast 0.3s forwards ease;
+  animation: percentageSlow 1.2s forwards ease, percentageFast 0.3s forwards ease;
   animation-delay: 0s, 1.75s;
-  -webkit-animation: percentage-slow 1.2s forwards ease, percentage-fast 0.3s forwards ease;
-  -webkit-animation-delay: 0s, 1.75s;
   /* content: "10%"; */
   font-size: 0.9em;
   letter-spacing: 1pt;
 }
-@keyframes percentage-slow {
+@keyframes percentageSlow {
   0% {
     content: "6%";
   }
@@ -2383,7 +2381,7 @@ a {
   }
 }
 
-@-webkit-keyframes percentage-slow {
+@-webkit-keyframes percentageSlow {
   0% {
     content: "6%";
   }
@@ -2401,7 +2399,7 @@ a {
   }
 }
 
-@keyframes percentage-fast {  
+@keyframes percentageFast {  
   0% {
     content: "11%";
   }
@@ -2461,7 +2459,7 @@ a {
   }
 }
 
-@-webkit-keyframes percentage-fast {  
+@-webkit-keyframes percentageFast {  
   0% {
     content: "11%";
   }
