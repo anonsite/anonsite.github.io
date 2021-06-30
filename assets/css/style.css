@@ -2357,11 +2357,11 @@ a {
   float: right;
 }
 #preloader .status .percentage:before {
-  animation: percentage-slow 1.2s forwards, percentage-fast .3s forwards;
+  animation: percentage-slow 1.2s forwards ease, percentage-fast 0.3s forwards ease;
   animation-delay: 0s, 1.75s;
-  -webkit-animation: percentage-slow 1.2s forwards, percentage-fast .3s forwards;
+  -webkit-animation: percentage-slow 1.2s forwards ease, percentage-fast 0.3s forwards ease;
   -webkit-animation-delay: 0s, 1.75s;
-  content: "10%";
+  /* content: "10%"; */
   font-size: 0.9em;
   letter-spacing: 1pt;
 }
