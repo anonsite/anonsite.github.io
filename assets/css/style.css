@@ -2402,6 +2402,9 @@ a {
 }
 
 @keyframes percentage-fast {  
+  0% {
+    content: "11%";
+  }
   15% {
     content: "15%";
   }
@@ -2459,6 +2462,9 @@ a {
 }
 
 @-webkit-keyframes percentage-fast {  
+  0% {
+    content: "11%";
+  }
   15% {
     content: "15%";
   }
