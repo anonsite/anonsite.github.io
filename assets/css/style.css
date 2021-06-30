@@ -2250,6 +2250,24 @@ a {
     width: 100%;
   }
 }
+@-webkit-keyframes progress {
+  0% {
+    width: 6%;
+  }
+  50% {
+  }
+  51% {
+  }
+  85% {
+    width: 11%;
+  }
+  95% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 #preloader .status {
   margin-top: 10px;
 }
@@ -2280,6 +2298,16 @@ a {
     opacity: 0;
   }
 }
+@-webkit-keyframes fadeLeft {
+  0% {
+    text-indent: 0;
+    opacity: 1;
+  }
+  100% {
+    text-indent: -100px;
+    opacity: 0;
+  }
+}
 #preloader .status .state:after {
   content: "Complete";
   position: absolute;
@@ -2291,6 +2319,16 @@ a {
   animation-delay: 2s;
 }
 @keyframes fadeLeft2 {
+  0% {
+    text-indent: 100px;
+    opacity: 0;
+  }
+  100% {
+    text-indent: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeLeft2 {
   0% {
     text-indent: 100px;
     opacity: 0;
@@ -2327,7 +2365,83 @@ a {
     content: "10%";
   }
 }
+
+@-webkit-keyframes percentage-slow {
+  0% {
+    content: "6%";
+  }
+  25% {
+    content: "7%";
+  }
+  50% {
+    content: "8%";
+  }
+  75% {
+    content: "9%";
+  }
+  100% {
+    content: "10%";
+  }
+}
+
 @keyframes percentage-fast {  
+  15% {
+    content: "15%";
+  }
+  20% {
+    content: "20%";
+  }
+  25% {
+    content: "25%";
+  }
+  30% {
+    content: "30%";
+  }
+  35% {
+    content: "35%";
+  }
+  40% {
+    content: "40%";
+  }
+  45% {
+    content: "45%";
+  }
+  50% {
+    content: "50%";
+  }
+  55% {
+    content: "55%";
+  }
+  60% {
+    content: "60%";
+  }
+  65% {
+    content: "65%";
+  }
+  70% {
+    content: "70%";
+  }
+  75% {
+    content: "75%";
+  }
+  80% {
+    content: "80%";
+  }
+  85% {
+    content: "85%";
+  }
+  90% {
+    content: "90%";
+  }
+  95% {
+    content: "95%";
+  }
+  100% {
+    content: "100%";
+  }
+}
+
+@-webkit-keyframes percentage-fast {  
   15% {
     content: "15%";
   }
