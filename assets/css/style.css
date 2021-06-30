@@ -2010,6 +2010,7 @@ a {
 }
 
 .cursor {
+  -webkit-animation: cursor 2s infinite;
   animation: cursor 2s infinite;
   color: rgb(0, 170, 0);
   display: inline-block;
@@ -2049,6 +2050,7 @@ a {
   }
 }
 #preloader .loader {
+  -webkit-animation: rotation 3.5s forwards linear;
   animation: rotation 3.5s forwards linear;
   position: absolute;
   top: -120px;
@@ -2086,6 +2088,8 @@ a {
   color: #2ed573;
   animation: overspin 0.5s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation-delay: 3.4s;
+  -webkit-animation: overspin 0.5s forwards cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation-delay: 3.4s;
   transform: rotate(180deg);
   opacity: 0;
 }
@@ -2105,6 +2109,8 @@ a {
   left: 80%;
   animation: mouse-pos 3.5s forwards, mouse-pos2 1s forwards;
   animation-delay: 0s, 4s;
+  -webkit-animation: mouse-pos 3.5s forwards, mouse-pos2 1s forwards;
+  -webkit-animation-delay: 0s, 4s;
   z-index: 20;
 }
 @keyframes mouse-pos {
@@ -2157,6 +2163,8 @@ a {
   font-size: 20px;
   animation: mouse-cont 2s forwards;
   animation-delay: 1.7s;
+  -webkit-animation: mouse-cont 2s forwards;
+  -webkit-animation-delay: 1.7s;
   color: #341f97;
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
@@ -2194,6 +2202,8 @@ a {
   border: 2px solid #222f3e;
   animation: circle 3.5s forwards;
   animation-delay: 1.7s;
+  -webkit-animation: circle 3.5s forwards;
+  -webkit-animation-delay: 1.7s;
   opacity: 0;
   transform: scale(0);
 }
@@ -2228,6 +2238,7 @@ a {
 }
 #preloader .loading-bar .progress-bar {
   animation: progress 2.2s forwards;
+  -webkit-animation: progress 2.2s forwards;
   width: 6%;
   height: 100%;
   background: #00aa00;
