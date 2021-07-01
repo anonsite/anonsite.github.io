@@ -75,32 +75,40 @@
     </div>
   </header><!-- End Header -->
 
-  <section id="hero" class="mt-5" data-aos="fade-in" data-aos-delay="3000">
-    <div class="container d-flex align-items-center justify-content-center text-center flex-column">
-      <img class="anon-logo" src="./assets/img/anonlogo.png">
-      <div class="my-5">
-        <a class="link-underline" href="https://app.uniswap.org/#/swap?outputCurrency=" target="_blank">join the revolution</a>
+  <section id="hero" class="pos-rel d-flex align-items-center justify-content-center text-center flex-column pb-0" data-aos="fade-in" data-aos-delay="3000">    
+    <div class="top-section">
+      <div class="top-bg">      
       </div>
-      <div id="app">
-      
-      </div>      
-
-      <div class="countdown">        
-        <div class="clock-wrapper-target">  
-        <div class="clock-wrapper-target text-center">  
-          <div class="time-tg" id="clock">
-            <div id="daystg" class="cd-tg"></div>
-            <div id="hourstg" class="cd-tg">24</div>
-            <div id="minutestg" class="cd-tg">00</div>
-            <div id="secondstg" class="cd-tg">00</div>
-          </div>
-          <div class="label-wrapper-target">
-            <div class="label-target">days</div>
-            <div class="label-target">hours</div>
-            <div class="label-target">minutes</div>
-            <div class="label-target">seconds</div>          
+      <canvas id="canv" width="100%" height="100%"></canvas>
+      <div class="bot-bg">      
+      </div>
+      <img class="anon-logo mb-5" src="./assets/img/anonlogo.png">
+    </div>
+      <div class="cover-matrix" style="background-color: #000; width: 100%;">
+        <div class="my-5">
+          <a class="link-underline" href="https://app.uniswap.org/#/swap?outputCurrency=" target="_blank">join the revolution</a>
         </div>
-      </div>    
+        <div id="app">
+        
+        </div>      
+  
+        <div class="countdown">        
+          <div class="clock-wrapper-target">  
+          <div class="clock-wrapper-target text-center">  
+            <div class="time-tg" id="clock">
+              <div id="daystg" class="cd-tg"></div>
+              <div id="hourstg" class="cd-tg">24</div>
+              <div id="minutestg" class="cd-tg">00</div>
+              <div id="secondstg" class="cd-tg">00</div>
+            </div>
+            <div class="label-wrapper-target">
+              <div class="label-target">days</div>
+              <div class="label-target">hours</div>
+              <div class="label-target">minutes</div>
+              <div class="label-target">seconds</div>          
+          </div>
+        </div>
+      </div>      
 
     </div>
 
@@ -295,5 +303,35 @@
   $('#minutestg').html(event.strftime('%M'));
   $('#secondstg').html(event.strftime('%S'));
   });
+</script>
+<script>
+  const canvas = document.getElementById('canv');
+const ctx = canvas.getContext('2d');
+
+const w = canvas.width = document.body.offsetWidth;
+const h = canvas.height = document.body.offsetHeight;
+const cols = Math.floor(w / 20) + 1;
+const ypos = Array(cols).fill(0);
+
+ctx.fillStyle = '#000';
+ctx.fillRect(0, 0, w, h);
+
+function matrix() {
+  ctx.fillStyle = '#0001';
+  ctx.fillRect(0, 0, w, h);
+
+  ctx.fillStyle = '#0f0';
+  ctx.font = '15pt monospace';
+
+  ypos.forEach((y, ind) => {
+    const text = String.fromCharCode(Math.random() * 128);
+    const x = ind * 20;
+    ctx.fillText(text, x, y);
+    if (y > 100 + Math.random() * 10000) ypos[ind] = 0;else
+    ypos[ind] = y + 20;
+  });
+}
+
+setInterval(matrix, 50);
 </script>
 </html>
