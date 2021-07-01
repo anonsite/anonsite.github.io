@@ -1913,7 +1913,6 @@ section {
 .clock-wrapper-target {
     width: 100%;
     max-width: 320px;
-    color: #fff;
     position: relative;
     text-align: center;
     display: flex;
@@ -1926,36 +1925,27 @@ section {
 .time-tg {
   display: block;
   width: 100%;
-  color: #0bc;
-  letter-spacing: 0.05em;
-  font-weight: 900;
 }
 
 .cd-tg {
   text-align: center;
   width: 25%;
   float: left;
-  font-size: 9vmin;
-  font-weight: 900;
 }
 
 .label-wrapper-target {
-  color: #fff;
   display: block;
   width: 100%;
-  font-size: 2.2vmin;
 }
 
 .label-target {
   width: 25%;
   text-align: center;
   float: left;
-  color: #daf6ff;
 }
 
 @media (min-width: 600px) {
   .cd-tg {
-    font-size: 8vmin;
   }  
 }
 @media (min-width: 768px) {
@@ -1965,7 +1955,6 @@ section {
     margin-bottom: 10px;
   }
   .cd-tg {
-    font-size: 7.5vmin;
   }
   .label-wrapper-target {
     font-size: 1.55vmin;    
