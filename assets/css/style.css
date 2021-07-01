@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .border-dots {
-  border: 1px dotted #00ff00;
+  border: 1px dashed #00ff00;
   padding: 6px 12px;
 }
 
