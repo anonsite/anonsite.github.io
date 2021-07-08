@@ -51,7 +51,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header">
+  <header id="header" data-aos="fade-in" data-aos-delay="3000">
     <div class="container d-flex align-items-center">
 
       <!-- <h1 class="logo mr-auto"><a href="index.html">CHAIN<span>.</span></a></h1> -->
@@ -289,7 +289,7 @@
  <script src="assets/js/main.js"></script>
 
  <script>
-  var fridayTime = moment("2021-07-08T17:00:00Z", moment.ISO_8601);
+  var fridayTime = moment("2021-07-08T20:00:00Z", moment.ISO_8601);
 
   $('#clock').countdown(fridayTime.toDate(), function(event) {
   var d = event.strftime('%D');
