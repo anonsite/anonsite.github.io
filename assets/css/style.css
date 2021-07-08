@@ -2547,3 +2547,13 @@ a {
     content: "100%";
   }
 }
+.buy-btn-anon {
+  border: 1px solid #0f0;
+  padding: 5px 10px 8px 10px;
+  font-size: 125%;
+}
+.buy-btn-anon:hover {
+  border: 1px solid #0f0;
+  color: #0f0;
+  padding: 5px 10px 8px 10px;
+}
